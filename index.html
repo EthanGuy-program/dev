@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Code Editor with Python and HTML Execution</title>
+                <style>
+                        #console {
+                                    height: 150px;
+                                                width: 100%;
+                                                            background-color: #1e1e1e;
+                                                                        color: white;
+                                                                                    overflow-y: auto;
+                                                                                                padding: 10px;
+                                                                                                            font-family: monospace;
+                                                                                                                        border: 1px solid #ccc;
+                                                                                                                                    margin-top: 10px;
+                                                                                                                                            }
+                                                                                                                                                    #iframe-output {
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                            height: 300px;
+                                                                                                                                                                                        border: 1px solid #ccc;
+                                                                                                                                                                                                }
+                                                                                                                                                                                                    </style>
+                                                                                                                                                                                                    </head>
+                                                                                                                                                                                                    <body>
+                                                                                                                                                                                                        <div id="editor" style="height: 70vh; width: 100vw;"></div>
+                                                                                                                                                                                                            <button id="run-python">Run Python</button>
+                                                                                                                                                                                                                <button id="run-html">Run HTML</button>
+                                                                                                                                                                                                                    <button id="save-button">Save Code</button>
+                                                                                                                                                                                                                        <button id="load-button">Load Code</button>
+                                                                                                                                                                                                                            <input type="file" id="file-input" style="display: none;">
+
+                                                                                                                                                                                                                                <h3>Console Output:</h3>
+                                                                                                                                                                                                                                    <div id="console"></div>
+
+                                                                                                                                                                                                                                        <h3>HTML Output:</h3>
+                                                                                                                                                                                                                                            <iframe id="iframe-output"></iframe>
+
+                                                                                                                                                                                                                                                <!-- Monaco Editor and Pyodide -->
+                                                                                                                                                                                                                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.37.1/min/vs/loader.min.js"></script>
+                                                                                                                                                                                                                                                        <script src="https://cdn.jsdelivr.net/pyodide/v0.23.2/full/pyodide.js"></script>
+                                                                                                                                                                                                                                                            <script src="js.js"></script>
+                                                                                                                                                                                                                                                            </body>
+                                                                                                                                                                                                                                                            </html>
